@@ -1,0 +1,751 @@
+﻿@media screen and (max-width: 1800px){
+    .dm_img{
+        margin-top: -10%;
+        margin-left: -10%;
+        height: 35%;
+    }
+}
+@media screen and (max-width: 1590px){
+    .dm_img{
+        margin-left: -15%;
+        height: 33%;
+    }
+}
+@media screen and (max-width: 1496px){
+    .login,
+    .basket{
+        font-size: 14px;
+    }
+    .login{
+        padding-left: 6%;
+    }
+    .basket{
+        text-align: right;
+        padding-left: 11%;
+        padding-right: 6%;
+    }
+    .header_middle{
+        width: 100%;
+        margin-left: 0;
+    }
+    .header_logo_img{
+        height: 90px;
+    }
+    .header_address{
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .header_menu .container{
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .navbar-left{
+        width: 30%;
+    }
+    .navbar-form .form-group{
+        margin-left: 0;
+    }
+    .navbar-form .form-control{
+        width: 300px!important;
+        padding-left: 14%;
+    }
+    .navbar-right{
+          width: 70%;
+          padding-right: 1%;
+          font-size: 14px;
+      }
+
+    .content_md{
+        width: 100%;
+    }
+    .banner{
+        margin-left: 0px;
+    }
+    .banner img{
+        height: 90%;
+    }
+    .discription_act{
+        text-align: center;
+    }
+    .actions_img{
+        height: 160px;
+    }
+
+.down_menu .container{
+    width: 100%;
+}
+
+    .dm_img{
+        margin-left: -17%;
+        height: 21%;
+        margin-top: -5%;
+    }
+}
+@media screen and (max-width: 1199px){
+    .header_top .container,
+    .header_info .container{
+        width: 100%;
+    }
+
+    .login,
+    .basket{
+        font-size: 12px;
+    }
+    .login{
+        padding-left: 2%;
+    }
+    .basket{
+        text-align: right;
+        padding-left: 0;
+        padding-right: 2%;
+        width: 50%;
+    }
+    .header_middle{
+        width: 100%;
+        margin-left: 0;
+    }
+    .header_logo_img{
+        height: 65px;
+    }
+    .header_address{
+        margin-top: 0;
+        font-size: 10px;
+        line-height: normal;
+    }
+    .header_phones{
+        text-align: center;
+    }
+    .phone{
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .phone_1{
+        font-size: 14px;
+    }
+    .header_btn{
+        margin-left: 0;
+        width: auto;
+    }
+    .header_menu .container{
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .navbar{
+        z-index: 1;
+    }
+    .navbar-toggle{
+        margin-right: 4%;
+        margin-top: 1.5%;
+        border:2px solid darkgreen;
+    }
+    .navbar-toggle .icon-bar{
+        background-color: darkgreen;
+    }
+    .navbar-collapse{
+        margin-left: 0!important;
+        width: 100%;
+        background-color: #44ac1e;
+    }
+    .navbar-left{
+        width: 30%;
+    }
+    .navbar-form .form-group{
+        margin-left: 0;
+    }
+    .form-control{
+        padding-left: 14%;
+    }
+    .navbar-form .form-control{
+        width: 240px!important;
+        padding-left: 18%;
+    }
+    .navbar-right{
+        width: 70%;
+        padding-right: 1%;
+        padding-top: 0.5%;
+        font-size: 12px;
+    }
+    .nav>li>a{
+        padding: 10px 10px;
+    }
+    .header_info_md{
+        width: 60%;
+        padding-left: 3%;
+    }
+    .header_info_h1{
+        font-size: 3.9em;
+    }
+    .content_md{
+        width: 100%;
+    }
+    .left_menu h3{
+        font-size: 18px;
+    }
+    .left_menu h3 a{
+        font-size: 10px;
+    }
+    .left_menu ul li.left_menu_li{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .open>.dropdown-menu{
+        font-size: 12px;
+    }
+    .banner{
+        margin-left: 0px;
+    }
+    .banner img{
+        height: 70%;
+    }
+    .discription_act{
+        text-align: center;
+    }
+    .actions h2{
+        font-size: 20px;
+    }
+    .act_text{
+        padding-left: 0;
+        font-size: 10px;
+        line-height: normal;
+    }
+    .actions_img{
+        height: 130px;
+    }
+    .all_content{
+        width: 100%;
+        padding: 1%;
+    }
+    .all_content h5{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .btn_more{
+        margin-left: 0;
+        width: 100%;
+    }
+    .about_text{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .down_menu .container{
+        width: 100%;
+    }
+    .down_menu h6,
+    ul.help, .brands, .about_us, .up{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .dm_img{
+        margin-left: -21%;
+        height: 15%;
+        margin-top: 0%;
+    }
+
+}
+@media screen and (max-width: 982px){
+    .header_top .container,
+    .header_info .container{
+        width: 100%;
+    }
+
+    .login,
+    .basket{
+        font-size: 12px;
+    }
+    .login{
+        padding-left: 2%;
+    }
+    .basket{
+        text-align: right;
+        padding-left: 0;
+        padding-right: 2%;
+        width: 50%;
+    }
+    .header_middle{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .header_logo{
+        flex-basis: 10%;
+    }
+    .header_logo_img{
+        height: 60px;
+    }
+    .header_address{
+        font-size: 12px;
+        line-height: normal;
+        flex-basis: 20%;
+    }
+    .header_phones{
+        text-align: center;
+        flex-basis: 20%;
+    }
+    .phone_1{
+        font-size: 13px;
+    }
+    .header_menu .container{
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .navbar{
+        z-index: 1;
+    }
+    .navbar-toggle{
+        margin-right: 3%;
+        margin-top: 1.5%;
+        border:2px solid darkgreen;
+        -webkit-box-shadow: 0px 4px 5px -1px rgba(52,153,16,1);
+        -moz-box-shadow: 0px 4px 5px -1px rgba(52,153,16,1);
+        box-shadow: 0px 4px 5px -1px rgba(52,153,16,1);
+    }
+    .navbar-toggle .icon-bar{
+        background-color: darkgreen;
+    }
+    .navbar-collapse{
+        margin-top: 4px;
+        margin-left: 0!important;
+        padding-left: 1%;
+        width: 100%;
+        background-color: #44ac1e;
+    }
+    .navbar-left{
+        width: 100%;
+    }
+    .navbar-form{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar-form .form-group{
+        margin-left: 0;
+    }
+    .form-control{
+        margin-left: 0;
+        padding-left: 6%;
+    }
+    .search_img{
+        margin-left: 2%;
+    }
+    .navbar-form .form-control{
+        width: 100%!important;
+    }
+    .navbar-right{
+        width: 100%;
+        padding-right: 0;
+        padding-left: 3%;
+        padding-top: 0;
+        font-size: 12px;
+    }
+    .nav>li>a{
+        padding: 10px 10px;
+    }
+    .header_info{
+        height: auto;
+    }
+    .header_info_md{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 12%;
+        text-align: center;
+    }
+    .header_info_h1{
+        margin-top: 12%;
+        font-size: 3.9em;
+    }
+    .content_md{
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .left_menu{
+        flex-basis: 25%;
+    }
+    .left_menu h3{
+        font-size: 18px;
+    }
+    .left_menu h3 a{
+        font-size: 10px;
+    }
+    .left_menu ul.left_menu_ul{
+        margin-top: 0px;
+        margin-left: 0;
+    }
+    .left_menu ul li.left_menu_li{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .open>.dropdown-menu{
+        font-size: 12px;
+    }
+    .banner{
+        margin-left: 0px;
+        margin-top: 0%;
+        height: auto;
+        text-align: center;
+        flex-grow: 2;
+    }
+    .banner img{
+        height: 100%;
+    }
+    .discription_act{
+        display: flex;
+        text-align: center;
+    }
+    .actions h2{
+        font-size: 20px;
+    }
+    .act_text{
+        padding-left: 0;
+        font-size: 10px;
+        line-height: normal;
+    }
+    .actions_img{
+        height: 130px;
+    }
+    .all_content h5{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .btn_more{
+        margin-left: 0;
+        background-size: cover;
+    }
+    .down_menu .container{
+        width: 100%;
+    }
+    .down_menu .row{
+        display: flex;
+        flex-direction: row;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .dm_position, .dm_position_md, .up{
+        flex-basis: 25%;
+    }
+
+    .dm_img{
+        margin-left: -15%;
+        height: 14%;
+        margin-top: 0%;
+    }
+
+}
+@media screen and (max-width: 770px){
+    .header_top{
+        display: block;
+        height: 52px;
+        padding: 1%;
+    }
+    .login,
+    .basket{
+        width: 100%;
+    }
+    .basket{
+        text-align: left;
+        padding-left: 2%;
+
+    }
+    .basket_img{
+        padding-right: 1%;
+    }
+    .header_logo_img{
+        height: 48px;
+    }
+    .header_address{
+        font-size: 10px;
+        line-height: normal;
+        flex-basis: 25%;
+    }
+    .header_phones{
+        text-align: center;
+        flex-basis: 35%;
+    }
+    .phone_1,
+    .header_btn{
+        font-size: 10px;
+    }
+    .navbar-toggle{
+        margin-right: 5%;
+    }
+    .nav>li>a{
+        padding: 5px 17px;
+    }
+    .sidebar{
+       align-items: center;
+    }
+    .left_menu{
+        flex-basis: 40%;
+    }
+    .banner img{
+        height: 60%;
+    }
+    .actions h2{
+        width: 100%;
+        text-align: center;
+    }
+    .actions_img{
+        height: 100px;
+    }
+    .btn_more{
+        font-size: 10px;
+        height: 12%;
+    }
+    .about{
+        padding: 1%;
+    }
+    .about_text{
+        text-align: justify;
+    }
+    .up{
+        flex-basis: 15%;
+        z-index: 1;
+    }
+    .dm_img{
+        margin-left: -10%;
+        height: 12%;
+        margin-top: 0%;
+    }
+
+}
+@media screen and (max-width: 629px){
+    .header_middle{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+    .header_logo {
+        flex-basis: 10%;
+        margin-top: 6%;
+    }
+    .header_address {
+        font-size: 10px;
+        line-height: normal;
+        flex-basis: 43%;
+        text-align: right;
+    }
+    .header_phones {
+        text-align: right;
+        flex-basis: 91%;
+        padding-top: 4%;
+    }
+    .phone_1, .header_btn{
+        font-size: 12px;
+    }
+    .header_info_h1{
+        margin-top: 12%;
+        font-size: 3em;
+        line-height: normal;
+    }
+    .sidebar{
+        flex-direction: column;
+    }
+    .left_menu{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .carret_md{
+        display: inline-block;
+        margin-top: 0%!important;
+        margin-right: 3%;
+    }
+    .left_menu h3{
+        text-align: center;
+    }
+    #drop_sidebar{
+        padding-bottom: 2%;
+    }
+    #drop_sidebar:hover,
+    #drop_sidebar:focus{
+        cursor: pointer;
+        color: #44ac1e;
+        -webkit-transition: all .6s ease; /*it means that the link will change color smoothly in Safari*/
+        -moz-transition: all .6s ease; /*Mozilla*/
+        -o-transition: all .6s ease; /*Opera*/
+        transition: all .6s ease; /*it means that the link will change color smoothly*/
+    }
+    .left_menu_ul{
+        display: none;
+    }
+
+    .caret{
+        margin-top: 4%;
+    }
+    .discription_act{
+        flex-direction: column;
+    }
+    .actions h2{
+        font-size: 30px;
+    }
+    .actions_img{
+        height: 100%;
+    }
+    .all_content{
+        margin-top: 8%;
+    }
+    .all_content h5{
+        margin-top: 1.5%;
+        font-size: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .act_text{
+        font-size: 16px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .btn_more{
+        height: 40px;
+        font-size: 16px;
+        width: 50%;
+    }
+    .discription_act_md{
+        padding-bottom: 8%;
+    }
+    .about_text{
+        font-size: 16px;
+    }
+    .down_menu .row{
+        flex-direction: column;
+    }
+    .down_menu h6, ul.help, .brands, .about_us, .up{
+        font-size: 16px;
+    }
+    .dm_position, .dm_position_md, .up{
+        margin-top: 5%;
+    }
+    .dm_img {
+        margin-left: 49%;
+        height: 17%;
+        margin-top: -40%;
+    }
+
+}
+@media screen and (max-width: 465px){
+    .header_middle{
+        padding-bottom: 8%;
+    }
+    .header_logo {
+        flex-basis: 10%;
+        margin-top: 1%;
+    }
+    .header_logo_img {
+        height: 60px;
+    }
+    .header_address {
+        font-size: 10px;
+        line-height: normal;
+        flex-basis: 91%;
+        text-align: center;
+        padding-top: 7%;
+    }
+    .header_phones{
+        text-align: center;
+    }
+    .navbar-form .form-control{
+        padding-left: 12%;
+    }
+    .header_info_h1{
+        font-size: 2.87em;
+    }
+    .left_menu ul.left_menu_ul{
+        padding-left: 4%;
+        padding-right: 0;
+    }
+    .go_catalog{
+        background-size: cover;
+    }
+    .dm_img {
+        margin-left: 52%;
+        height: 12%;
+        margin-top: -39%;
+    }
+}
+@media screen and (max-width: 375px){
+    .header_top{
+        height: auto;
+        text-align: center;
+    }
+    .login,
+    .basket{
+        font-size: 10px;
+    }
+    .login_img,
+    .basket_img{
+        height: 13px;
+    }
+
+    .header_middle{
+        text-align: center;
+    }
+    .header_btn{
+        width: 100%;
+        background-size: cover;
+    }
+    .header_menu{
+        height: 50px;
+    }
+    .container > .navbar-header{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .navbar-collapse{
+        margin-top: 0;
+    }
+
+    .header_info_h1{
+        font-size: 2.5em;
+    }
+    .go_catalog{
+        width: 100%;
+        background-size: cover;
+    }
+    .navbar-form .form-control{
+        padding-left: 14%;
+    }
+    .banner img{
+        height: 220px;
+    }
+
+    .discription_act{
+        align-items: center;
+        padding-bottom: 15%;
+    }
+    .actions h2{
+        font-size: 26px;
+    }
+    .actions_img{
+        height: 180px;
+    }
+    .all_content h5{
+        font-size: 16px;
+    }
+    .act_text{
+        text-align: justify;
+    }
+    .btn_more{
+        width: 100%;
+    }
+    .about_text{
+        padding-bottom: 10%;
+    }
+    .dm_img{
+        margin-left: 45%;
+        height: 13%;
+        margin-top: -32%;
+        z-index: 0;
+    }
+}

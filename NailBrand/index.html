@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NailBrands</title>
+	<meta name="description" content="Title" /><!-- Description of the page -->
+	<meta name="author" content="Shpikovskaya Olesya"><!-- Author Name -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/style_media.css" type="text/css" />
+
+</head>
+
+<body>
+<div id="page">
+	<div class="main">
+		<header>
+			<div class="header_top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 float_img login">
+							<a id="up"></a>
+							<a href="#"><img src="img/header/login.png" alt="" class="login_img">Войти</a> или
+							<a href="#">Зарегистрироваться</a>
+						</div>
+						<div class="col-md-6 basket">
+							<div class="">
+								<a href="#"><img src="img/header/basket.png" alt="" class="basket_img"></a>
+								Ваша корзина: <span class="count_goods">0 товара</span>
+								на сумму <span class="money">2312 руб.</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--header - middle-->
+			<div class="header_middle">
+				<div class="header_logo">
+					<img src="img/header/logo.png" alt="" class="header_logo_img">
+				</div>
+				<div class="header_address">
+					<p><b>Адрес:</b></p>
+					<p>м. Площадь Ильича, улица Сергия Рдонежского дом 2-25 строение 1</p>
+				</div>
+				<div class="header_phones">
+					<div class="phone">
+						<a href="tel:+74993476348"><span class="phone_1">+7(499)347-63-48</span></a> / <a href="tel:+74956782169"><span class="phone_1">+7(495)678-21-69</span></a>
+					</div>
+					<button type="button" name="call" class="header_btn">Заказать звонок</button>
+				</div>
+			</div>
+			<!--header - menu-->
+			<div class="header_menu">
+				<nav class="navbar">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!--<a class="navbar-brand" href="#">Brand</a>-->
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<form class="navbar-form navbar-left">
+								<div class="form-group">
+									<img src="img/header/search.png" alt="" class="search_img">
+									<input type="text" id="search" class="form-control" placeholder="Поиск по сайту">
+								</div>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">Как заказать</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Акции</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+
+			</div>
+			<!--header - info-->
+			<div class="header_info">
+				<div class="row">
+					<div class="container">
+						<div class="col-md-6 header_info_md">
+							<h1 class="header_info_h1">Все для Вас и Вашего безупречного маникюра</h1>
+							<button type="button" name="btn_catalog" class="go_catalog">Перейти в каталог</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- /end header-->
+
+		<!--sidebar and other content-->
+		<div class="container content_md">
+			<div class="row">
+				<div class="col-md-3 sidebar">
+					<div class="left_menu">
+						<h3 id="drop_sidebar"><b class="caret carret_md"></b>Каталог <a href="#">по брендам</a></h3>
+						<ul id="accordion" class="panel-group left_menu_ul">
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-1" data-parent="#accordion" data-toggle="collapse" class="li_sidebar">Гель лак <b class="caret float_r"></b></a>
+								<ul id="collapse-1" class="panel-collapse collapse">
+									<li>Гель лак 1</li>
+									<li>Гель лак 2</li>
+									<li>Гель лак 3</li>
+								</ul>
+							</li>
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-2" class="dropdown-toggle li_sidebar" data-parent="#accordion" data-toggle="collapse">First Gel <b class="caret float_r"></b></a>
+								<ul id="collapse-2" class="panel-collapse collapse">
+									<li>First Gel 1</li>
+									<li>First Gel 2</li>
+									<li>First Gel 3</li>
+								</ul>
+							</li>
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-3" class="dropdown-toggle li_sidebar" data-parent="#accordion" data-toggle="collapse">Уход<b class="caret float_r"></b></a>
+								<ul id="collapse-3" class="panel-collapse collapse">
+									<li>Уход 1</li>
+									<li>Уход 2</li>
+									<li>Уход 3</li>
+								</ul>
+							</li>
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-4" class="dropdown-toggle li_sidebar" data-parent="#accordion" data-toggle="collapse" >Гель<b class="caret float_r"></b></a>
+								<ul id="collapse-4" class="panel-collapse collapse">
+									<li>Гель 1</li>
+									<li>Гель 2</li>
+									<li>Гель 3</li>
+								</ul>
+							</li>
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-5" class="dropdown-toggle li_sidebar" data-parent="#accordion" data-toggle="collapse">Акрил<b class="caret float_r"></b></a>
+								<ul id="collapse-5" class="panel-collapse collapse">
+									<li>Акрил 1</li>
+									<li>Акрил 2</li>
+									<li>Акрил 3</li>
+								</ul>
+							</li>
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-6" class="dropdown-toggle li_sidebar" data-parent="#accordion" data-toggle="collapse">Инструменты<b class="caret float_r"></b></a>
+								<ul id="collapse-6" class="panel-collapse collapse">
+									<li>Инструменты 1</li>
+									<li>Инструменты 2</li>
+									<li>Инструменты 3</li>
+								</ul>
+							</li>
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-7" class="dropdown-toggle li_sidebar" data-parent="#accordion" data-toggle="collapse">Жидкости<b class="caret float_r"></b></a>
+								<ul id="collapse-7" class="panel-collapse collapse">
+									<li>Жидкости 1</li>
+									<li>Жидкости 2</li>
+									<li>Жидкости 3</li>
+								</ul>
+							</li>
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-8" class="dropdown-toggle li_sidebar" data-parent="#accordion" data-toggle="collapse">Оборудование<b class="caret float_r"></b></a>
+								<ul id="collapse-8" class="panel-collapse collapse">
+									<li>Оборудование 1</li>
+									<li>Оборудование 2</li>
+									<li>Оборудование 3</li>
+								</ul>
+							</li>
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-9" class="dropdown-toggle li_sidebar" data-parent="#accordion" data-toggle="collapse" data-parent="accordion">Аксессуары<b class="caret float_r"></b></a>
+								<ul id="collapse-9" class="panel-collapse collapse">
+									<li>Аксессуары 1</li>
+									<li>Аксессуары 2</li>
+									<li>Аксессуары 3</li>
+								</ul>
+							</li>
+							<li class="panel panel-default left_menu_li">
+								<a href="#collapse-10" class="dropdown-toggle li_sidebar" data-parent="#accordion" data-toggle="collapse">Дизайн<b class="caret float_r"></b></a>
+								<ul id="collapse-10" class="panel-collapse collapse">
+									<li>Дизайн 1</li>
+									<li>Дизайн 2</li>
+									<li>Дизайн 3</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="banner">
+						<img src="img/sidebar/banner_1.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="all_content">
+						<div class="action">
+							<div class="row">
+								<div class="actions">
+									<h2>Акции и спецпредложения</h2>
+								</div>
+							</div>
+							<div class="row discription_act">
+								<div class="col-md-4 discription_act_md">
+									<img src="img/contant/action_1.jpg" alt="" class="actions_img">
+									<h5>Новинка - три вида ламп CCFL и LED для сушки гель лака</h5>
+									<div class="act_text">
+										Мы рады сообщить о расширении ассортимента ламп для сушки геля и гель лака в нашем магазине
+									</div>
+									<button type="button" name="btn_more" class="btn_more">Подробнее</button>
+								</div>
+								<div class="col-md-4 discription_act_md">
+									<img src="img/contant/action_2.jpg" alt="" class="actions_img">
+									<h5>Новинка - черная палитра для гель лаков на кольце</h5>
+									<div class="act_text">
+										Мы рады сообщить о расширении ассортимента ламп для сушки геля и гель лака в нашем магазине
+									</div>
+									<button type="button" name="btn_more" class="btn_more">Подробнее</button>
+								</div>
+								<div class="col-md-4 discription_act_md">
+									<img src="img/contant/action_3.jpg" alt="" class="actions_img">
+									<h5>Четыре новых коллекции гель лаков Nail Passion уже в продаже</h5>
+									<div class="act_text">
+										Мы рады сообщить о расширении ассортимента ламп для сушки геля и гель лака в нашем магазине
+									</div>
+									<button type="button" name="btn_more" class="btn_more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="about">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="actions">
+									<h2>О компании Nailbrand</h2>
+								</div>
+								<div class="about_text">
+									Продажа качественных материалов для наращивания ногтей недорого – вот основная сфера деятельности нашей компании. Магазинов материалов для наращивания ногтей в Москве немало, однако, далеко не все они могут похвастаться таким широким ассортиментом. В нашем каталоге Вы без труда найдёте современные гели лаки для ногтей, аппарат для маникюра и педикюра, гель и акрил для наращивания ногтей, кусачки для кутикулы и другую продукцию, которая необходима любому профессиональному маникюрному салону.
+								</div>
+								<div class="about_text">
+									Каждому салону красоты, специализирующемуся на маникюре и педикюре, знакома проблема закупки материалов и оборудования. Если Вы давно искали надёжного партнёра-поставщика материалов для наращивания ногтей, нашему магазину есть, что Вам предложить. Мы проводим тщательный отбор торговых марок, и Вы можете быть уверены, что покупаете лучший гель для наращивания ногтей, надежный сухожаровой стерилизатор и ультрафиолетовую лампу. Наши специалисты всегда проконсультируют об особенностях акрилов, гелей и другой продукции той или иной марки.
+								</div>
+								<div class="about_text">
+									Мы предлагаем не только большой ассортимент качественной продукции, но и привлекательные цены на все материалы и оборудование. Кроме того, наш магазин материалов для наращивания ногтей довольно просто найти. Наша компания располагается в 3 минутах пешком от м.Площадь Ильича по адресу ул. Сергия Радонежского 23-25 стр.1.
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<!--section down menu-->
+	<div class="down_menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 dm_position">
+					<h6>Помощь</h6>
+					<ul class="help">
+						<li><a href="#">Служба поддержки</a></li>
+						<li><a href="#">Доставка товара</a></li>
+						<li><a href="#">Способы оплаты</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 dm_position">
+					<h6>Бренды</h6>
+					<div class="brands">
+						<a href="#">First Gel</a>
+						<a href="#">Kinetics,</a>
+						<a href="#">Yoko,</a>
+						<a href="#">Roubloff,</a>
+						<a href="#">Swarovski,</a>
+						<a href="#">Fantasy Nails,</a>
+						<a href="#">IBX System,</a>
+						<a href="#">Runail,</a>
+						<a href="#">Kodi,</a>
+						<a href="#">Tartiso,</a>
+						<a href="#">Nail Passion,</a>
+						<a href="#">UNO</a>
+					</div>
+				</div>
+				<div class="col-md-3 dm_position_md">
+					<h6><a href="#">NAILBRAND.COM</a></h6>
+					<ul class="about_us">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Наши преимущества</a></li>
+						<li><a href="#">Сотрудничество</a></li>
+						<li><a href="#">Отзывы клиентов</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+
+				</div>
+				<div class="col-md-3 up">
+					<a href="#up"  class="up"><span class="up">Наверх</span></a>
+				</div>
+				<a href="#"><img src="img/down_menu.png" alt="" class="dm_img"></a>
+			</div>
+		</div>
+	</div>
+
+
+	<!--footer-->
+	<footer>
+		<div class="header_middle">
+			<div class="header_logo">
+				<img src="img/header/logo.png" alt="" class="header_logo_img">
+			</div>
+			<div class="header_address">
+				<p><b>Адрес:</b></p>
+				<p>м. Площадь Ильича, улица Сергия Рдонежского дом 2-25 строение 1</p>
+			</div>
+			<div class="header_phones">
+				<div class="phone">
+					<a href="tel:+74993476348"><span class="phone_1">+7(499)347-63-48</span></a>/
+					<a href="tel:+74956782169"><span class="phone_1">+7(495)678-21-69</span></a>
+				</div>
+				<button type="button" name="call" class="header_btn">Заказать звонок</button>
+			</div>
+		</div>
+	</footer>
+</div><!-- /end #page-->
+
+
+
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--<script type="text/javascript" src="js/npm.js"></script>-->
+
+<script type="text/javascript" src="js/js.js"></script>
+
+</body>
+</html>
