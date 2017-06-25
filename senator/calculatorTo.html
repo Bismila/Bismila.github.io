@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Senator</title>
+
+	<meta name="description" content="Title" /><!-- Description of the page -->
+	<meta name="author" content="Shpikovskaya Olesya"><!-- Author Name -->
+	<!--<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">-->
+	<link href="http://allfont.ru/allfont.css?fonts=raleway-regular" rel="stylesheet" type="text/css" />
+	<link href="http://allfont.ru/allfont.css?fonts=raleway-bold" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css"><!-- Bootstrap Style -->
+	<link rel="stylesheet" href="css/font-awesome.min.css"><!-- Custom Style -->
+	<link rel="stylesheet" href="css/slick.css"><!-- Slick Style -->
+	<link rel="stylesheet" href="css/slick-theme.css"><!-- Slick Style -->
+	<link rel="stylesheet" href="css/style.css"><!-- Custom Style -->
+</head>
+<body>
+<!--HEADER-->
+<header class="header">
+	<div class="header_top visible-sm visible-md visible-lg">
+		<ul class="">
+			<li class="active"><a href="about_company.html">О компании</a></li>
+			<li><a href="contacts.html">Контакты</a></li>
+			<li><a href="#">Отзывы</a></li>
+			<li><a href="articles_video.html">Статьи/видео</a></li>
+		</ul>
+	</div>
+	<div class="header_middle">
+		<div class="row">
+			<nav class="navbar">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="col-sm-3 col-md-2">
+						<a class="navbar-brand" href="#">
+							<img src="img/index/logo_header.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2 visible-md visible-lg">
+						<div class="h_text_1">
+							<p>Профессиональное</p>
+							<p>обслуживание и ремонт</p>
+							<p>автомобилей</p>
+						</div>
+					</div>
+
+					<div class="col-md-2 visible-md visible-lg">
+						<div class="h_text_1">
+							<p>+7 4832 338-338</p>
+							<p>+7 4832 78-33-82</p>
+							<a href="tel:+74832338338">Заказать звонок</a>
+						</div>
+					</div>
+					<div class="col-md-2 visible-md visible-lg">
+						<div class="h_text_1">
+							<p>ул. Объездная, 18</p>
+							<p>(Советский район)</p>
+							<a href="contacts.html">Показать схему проезда</a>
+						</div>
+					</div>
+
+					<div class="col-xs-6 no_padding col-sm-3 col-md-2 visible-xs visible-sm">
+						<div class="h_text_1_sm">
+							<a href="tel:+74832338338">
+								<img src="img/index/header_phone.png" alt="">
+								Позвонить нам
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 no_padding col-sm-3 col-md-2 visible-xs visible-sm">
+						<div class="h_text_1_sm">
+							<a href="#">
+								<img src="img/index/header_marker.png" alt="">
+								Схема проезда
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-2 visible-md visible-lg">
+						<div class="h_text_1">
+							<p>Работаем</p>
+							<p>с 9:00 до 18:00</p>
+							<p>без выходных</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-2 no_padding">
+						<div class="order_on_servis">
+							<button type="button" class="btn_order_1">
+								<img src="img/index/order_on_servis.png" alt="">запись на сервис</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="services.html">услуги</a></li>
+						<li><a href="marka_auto.html">запчасти</a></li>
+						<li><a href="actions.html">акции</a></li>
+						<li><a href="calculatorTo.html">калькулятор ТО</a></li>
+						<li class="visible-xs hidden-sm"><a href="#" class="menu_xs">О компании</a></li>
+						<li class="visible-xs hidden-sm"><a href="#" class="menu_xs">Контакты</a></li>
+						<li class="visible-xs hidden-sm"><a href="#" class="menu_xs">Отзывы</a></li>
+						<li class="visible-xs hidden-sm"><a href="#" class="menu_xs">Статьи/видео</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+	<div class="header_bottom">
+		<div class="row">
+			<div class="container-fluid">
+				<div class="col-md-12">
+					<h1>
+						профессиональный сервис вашего авто <span class="red_square"></span>
+					</h1>
+					<p>
+						диагностика, ремонт и обслуживание
+					</p>
+
+					<form action="" class="clearfix header_bottom_form">
+						<input type="text" placeholder="Ваше имя" class="header_bottom_name">
+						<input type="tel" id="phone_mask" placeholder="+7(___)___-__-__" class="header_bottom_tel">
+						<div class="group_btn">
+							<div class="gbtn_1">
+								<span class="i_want"><img src="img/index/order_red.png" alt=""></span>
+								Хочу записаться на сервис
+							</div>
+							<div class="gbtn_1">
+								<span class="i_want"><img src="img/index/order_red.png" alt=""></span>
+								Хочу купить запчасти
+							</div>
+						</div>
+						<button type="button" class="btn_call">заказать звонок</button>
+					</form>
+					<h2>
+						широкий выбор автозапчастей в наличии
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!--HEADER END-->
+
+    <!--MAIN BEGIN-->
+    <main>
+		<div class="row">
+			<div class="we_are_repairing calc_repairing">
+				<div class="step_1">
+					<p>
+						<span>Шаг 1 </span> / Для расчета стоимости ТО Вам необходимо выбрать модель вашего авто:
+					</p>
+				</div>
+				<div class="war_content calc_step_1 clearfix">
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_01.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_02.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_03.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_04.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_05.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_06.png" alt="">
+							</div>
+						</a>
+					</div>
+
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_07.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_08.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_09.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_10.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_11.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_12.png" alt="">
+							</div>
+						</a>
+					</div>
+
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_13.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_14.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_15.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-2 no_padding">
+						<a href="#">
+							<div class="ico">
+								<img src="img/index/ico_16.png" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="calc_txt">
+					<p>Какой-то текст текст текст текст текст текст текст текст текст текст текст. Меняется в зависимости от выбранной марки
+						Линия продукции eni представляет собой достаточно большое разнообразие автомобильных масел, произведенных в соответствии с наивысшими стандартами качества. В любых условиях эксплуатации представительских, спортивных и городских автомобилей моторное масло Eni обеспечивает деталям двигателя надежный уровень защиты от различных проявлений износа.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="calc_step_bg">
+					<div class="calc_step_2">
+						<div class="step_1">
+							<p class="st_3">
+								<span>Шаг 2 </span> / Укажите параметры вашего авто:
+							</p>
+						</div>
+							<div class="ma_select_wrapper">
+								<div class="ma_vss_price">
+									<select class="ma_vsc_sel">
+										<option>Выберите модель</option>
+										<option value="1">Выберите модель 1</option>
+										<option value="2">Выберите модель 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="ma_select_wrapper">
+							<div class="ma_vss_price">
+								<select class="ma_vsc_sel">
+									<option>Выберите модельный год</option>
+									<option value="1">Выберите модельный год 1</option>
+									<option value="2">Выберите модельный год 2</option>
+								</select>
+							</div>
+						</div>
+							<div class="ma_select_wrapper">
+								<div class="ma_vss_price">
+									<select class="ma_vsc_sel">
+										<option>Выберите тип трансмиссии</option>
+										<option value="1">Выберите тип трансмиссии 1</option>
+										<option value="2">Выберите тип трансмиссии 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="ma_select_wrapper">
+								<div class="ma_vss_price">
+									<select class="ma_vsc_sel">
+										<option>Выберите тип двигателя</option>
+										<option value="1">Выберите тип двигателя 1</option>
+										<option value="2">Выберите тип двигателя 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="ma_select_wrapper">
+								<div class="ma_vss_price">
+									<select class="ma_vsc_sel">
+										<option>Выберите вариант ТО</option>
+										<option value="1">Выберите вариант ТО 1</option>
+										<option value="2">Выберите вариант ТО 2</option>
+									</select>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div><!--end .ma_block_content-->
+			</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="">
+					<div class="calc_step_3">
+						<div class="step_1">
+							<p class="st_3">
+								<span>Шаг 3 </span> / Услуги и стоимость
+							</p>
+
+						</div>
+						<div class="calc_txt">
+							<p>
+								<span>Какой-то текст текст текст текст текст текст текст текст текст текст текст.</span>
+							<span>Линия продукции eni представляет собой достаточно большое разнообразие автомобильных масел, произведенных в соответствии с наивысшими стандартами качества. В любых условиях эксплуатации представительских,
+								спортивных и городских автомобилей моторное масло Eni обеспечивает деталям двигателя надежный уровень защиты от различных проявлений износа.</span>
+							</p>
+						</div>
+						<div class="cost_of_work">
+							<p class="cow_txt">
+								В стоимость то включены следующие работы/запчасти:
+								<span>Вы можете отказаться от каких-либо работ или запчастей, убрав галочку</span>
+							</p>
+							<div class="cow_table">
+								<div class="cow_row none_500">
+									<span class="cow_cell"></span>
+									<span class="cow_cell"></span>
+									<span class="cow_cell none_500"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell cost_cell">Стоимость</span>
+								</div>
+
+								<div class="cow_row main_row">
+									<span class="cow_cell">
+										<div class="cell_check">
+											<img src="img/index/order_red.png" alt="">
+										</div>
+									</span>
+									<span class="cow_cell js_name">
+										<div class="cell_name_1">Замена масла и маляного фильтра</div>
+									</span>
+									<span class="cow_cell none_500"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell">
+										<div class="cell_price">1000</div>
+									</span>
+								</div>
+
+									<div class="cow_row">
+										<span class="cow_cell"></span>
+										<span class="cow_cell block js_name">
+											<div class="cell_check">
+												<img src="img/index/order_red.png" alt="">
+											</div>
+											<div class="cell_name">Масляный фильтр</div>
+										</span>
+										<span class="cow_cell block">
+											<div class="div_check">
+												<div class="origin">Оригинал: </div>
+												<div class="origin_checkBox">
+													<input type="checkbox" class="checkbox" id="checkbox_1" />
+													<label for="checkbox_1"></label>
+												</div>
+											</div>
+										</span>
+										<span class="cow_cell block">
+											<div class="marka">
+											Марка:  <span class="marka_name">Kolbenschmidt</span>
+											</div>
+										</span>
+										<span class="cow_cell">
+											<div class="cell_price">1000</div>
+										</span>
+									</div>
+
+								<div class="cow_row main_row">
+									<span class="cow_cell">
+										<div class="cell_check">
+											<img src="img/index/order_red.png" alt="">
+										</div>
+									</span>
+									<span class="cow_cell js_name"><div class="cell_name_1">Замена тормозных колодок</div></span>
+									<span class="cow_cell none_500"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell">
+										<div class="cell_price">1000</div>
+									</span>
+								</div>
+
+									<div class="cow_row">
+										<span class="cow_cell"></span>
+										<span class="cow_cell block bl_width js_name">
+											<div class="cell_check">
+												<img src="img/index/order_red.png" alt="">
+											</div>
+											<div class="cell_name">Передние тормозные колодки</div>
+										</span>
+										<span class="cow_cell block">
+											<div class="div_check">
+												<div class="origin">Оригинал: </div>
+												<div class="origin_checkBox">
+													<input type="checkbox" class="checkbox" id="checkbox_2" />
+													<label for="checkbox_2"></label>
+
+												</div>
+											</div>
+										</span>
+										<span class="cow_cell block">
+											<div class="marka">Марка: <span class="marka_name">Kolbenschmidt</span></div></span>
+										<span class="cow_cell">
+											<div class="cell_price"></div>
+										</span>
+									</div>
+
+									<div class="cow_row">
+										<span class="cow_cell"></span>
+										<span class="cow_cell block js_name">
+											<div class="cell_check">
+												<img src="img/index/order_red.png" alt="">
+											</div>
+											<div class="cell_name">Задние тормозные колодки</div>
+										</span>
+										<span class="cow_cell block">
+											<div class="div_check">
+												<div class="origin">Оригинал: </div>
+												<div class="origin_checkBox">
+													<input type="checkbox" class="checkbox" id="checkbox_3" />
+													<label for="checkbox_3"></label>
+
+												</div>
+											</div>
+										</span>
+										<span class="cow_cell block">
+											<div class="marka">Марка: <span class="marka_name">Kolbenschmidt</span></div></span>
+										<span class="cow_cell">
+											<div class="cell_price"></div>
+										</span>
+									</div>
+
+								<div class="cow_row main_row">
+									<span class="cow_cell">
+										<div class="cell_check">
+											<img src="img/index/order_red.png" alt="">
+										</div>
+									</span>
+									<span class="cow_cell js_name">
+										<div class="cell_name_1">Замена воздушного фильтра</div>
+									</span>
+									<span class="cow_cell none_500"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell">
+										<div class="cell_price">1000</div>
+									</span>
+								</div>
+
+									<div class="cow_row">
+										<span class="cow_cell"></span>
+										<span class="cow_cell block js_name">
+											<div class="cell_check">
+												<img src="img/index/order_red.png" alt="">
+											</div>
+											<div class="cell_name">Воздушный фильтр</div>
+										</span>
+										<span class="cow_cell block">
+											<div class="div_check">
+												<div class="origin">Оригинал: </div>
+												<div class="origin_checkBox">
+													<input type="checkbox" class="checkbox" id="checkbox_5" />
+													<label for="checkbox_5"></label>
+
+												</div>
+											</div>
+										</span>
+										<span class="cow_cell block">
+											<div class="marka">Марка: <span class="marka_name">Kolbenschmidt</span></div>
+										</span>
+										<span class="cow_cell">
+											<div class="cell_price"></div>
+										</span>
+									</div>
+
+								<div class="cow_row main_row">
+									<span class="cow_cell">
+										<div class="cell_check">
+											<img src="img/index/order_red.png" alt="">
+										</div>
+									</span>
+									<span class="cow_cell js_name">
+										<div class="cell_name_1">Замена воздушного фильтра</div>
+									</span>
+									<span class="cow_cell none_500"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell">
+										<div class="cell_price">1000</div>
+									</span>
+								</div>
+
+									<div class="cow_row">
+									<span class="cow_cell"></span>
+									<span class="cow_cell block js_name">
+											<div class="cell_check">
+												<img src="img/index/order_red.png" alt="">
+											</div>
+											<div class="cell_name">Воздушный фильтр</div>
+										</span>
+									<span class="cow_cell block">
+											<div class="div_check">
+												<div class="origin">Оригинал: </div>
+												<div class="origin_checkBox">
+													<input type="checkbox" class="checkbox" id="checkbox" />
+													<label for="checkbox"></label>
+
+												</div>
+											</div>
+										</span>
+									<span class="cow_cell block"><div class="marka">Марка: <span class="marka_name">Kolbenschmidt</span></div></span>
+									<span class="cow_cell">
+											<div class="cell_price"></div>
+										</span>
+								</div>
+
+								<div class="cow_row main_row choose">
+									<span class="cow_cell">
+										<div class="cell_check"></div>
+									</span>
+									<span class="cow_cell js_name">
+										<div class="cell_name_1">Замена фильтра салона</div>
+									</span>
+									<span class="cow_cell none_500"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell">
+										<div class="cell_price"></div>
+									</span>
+								</div>
+
+								<div class="cow_row main_row">
+									<span class="cow_cell">
+										<div class="cell_check">
+											<img src="img/index/order_red.png" alt="">
+										</div>
+									</span>
+									<span class="cow_cell js_name">
+										<div class="cell_name_1">проверка Системы выпуска отработавших газов двигателя</div>
+									</span>
+									<span class="cow_cell none_500"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell">
+										<div class="cell_price">1000</div>
+									</span>
+								</div>
+
+								<div class="cow_row main_row">
+									<span class="cow_cell">
+										<div class="cell_check">
+											<img src="img/index/order_red.png" alt="">
+										</div>
+									</span>
+									<span class="cow_cell js_name">
+										<div class="cell_name_1">проверка Состояния акб и генератора</div>
+									</span>
+									<span class="cow_cell none_500"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell">
+										<div class="cell_price">1000</div>
+									</span>
+								</div>
+
+								<div class="cow_row main_row">
+									<span class="cow_cell">
+										<div class="cell_check">
+											<img src="img/index/order_red.png" alt="">
+										</div>
+									</span>
+									<span class="cow_cell js_name">
+										<div class="cell_name_1">проверка, регулировка углов установки колес</div>
+									</span>
+									<span class="cow_cell none_500"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell">
+										<div class="cell_price">1000</div>
+									</span>
+								</div>
+								<div class="cow_row none_500">
+									<span class="cow_cell"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell none_768"></span>
+									<span class="cow_cell">
+										<div class="cow_summ">Итого за ТО:</div>
+									</span>
+									<span class="cow_cell">
+											<div class="all_summ">11 000 р</div>
+									</span>
+								</div>
+							</div>
+							<p class="p_summ">
+								<span class="cow_summ">Итого за ТО:</span> <span class="all_summ">11 000 р</span>
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div><!--end .ma_block_content-->
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="calc_step_bg">
+					<div class="calc_step_2">
+						<div class="step_1">
+							<p>
+								<span>Шаг 4 </span> / Запись на ТО
+							</p>
+						</div>
+						<form action="" class="clearfix step_4_form">
+							<input type="text" placeholder="Ваше имя" class="header_bottom_name">
+							<input type="tel" id="phone_mask" placeholder="+7(___)___-__-__" class="header_bottom_tel">
+							<input type="email" id="email" placeholder="E-mail" class="header_bottom_tel">
+
+							<button type="button" class="btn_order_to">записаться на то</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div><!--end .ma_block_content-->
+		</div>
+
+
+
+
+
+    </main>
+    <!--MAIN END-->
+    <!--FOOTER BEGIN-->
+    <footer class = "footer clearfix">
+	    <!--<div class="container-fluid">-->
+	    <div class="row">
+		    <div class="col-md-5">
+			    <div class="footer_content">
+				    <p>2017© АвтоТехЦентр СЕНАТОР</p>
+				    <p>осуществляет полное обслуживание и ремонт иномарок и отечественных автомобилей: шиномонтаж, ремонт двигателя и ходовой части, диагностику двигателя, экспресс-замену масла, вклейку стёкол, заправку кондиционеров, развал-схождение и другие виды работ.</p>
+			    </div>
+		    </div>
+
+		    <div class="col-sm-4 col-md-2">
+			    <div class="f_services_block">
+				    <p>услуги</p>
+				    <ul>
+					    <li><a href="#">Диагностика подвески</a></li>
+					    <li><a href="#">Автоэлектрика</a></li>
+					    <li><a href="#">Подвеска</a></li>
+					    <li><a href="#">Сход-развал</a></li>
+					    <li><a href="#">Ремонт ДВС</a></li>
+					    <li><a href="#">Замена масла/фильтров</a></li>
+					    <li><a href="#">Мойка</a></li>
+				    </ul>
+			    </div>
+		    </div>
+		    <div class="col-sm-4 col-md-2">
+			    <div class="f_spare_parts">
+				    <p>запчасти</p>
+				    <ul>
+					    <li><a href="#">Porsche</a></li>
+					    <li><a href="#">Toyota</a></li>
+					    <li><a href="#">Lexus</a></li>
+					    <li><a href="#">Renolt</a></li>
+					    <li><a href="#">Porsche</a></li>
+					    <li><a href="#">Toyota</a></li>
+					    <li><a href="#">Lexus</a></li>
+					    <li><a href="#">Renolt</a></li>
+					    <li><a href="#">Porsche</a></li>
+				    </ul>
+			    </div>
+		    </div>
+		    <div class="col-sm-4 col-md-3 no_padding">
+			    <div class="f_other_href">
+				    <ul>
+					    <li><a href="about_company.html">о компании</a></li>
+					    <li><a href="#">отзывы</a></li>
+					    <li><a href="articles_video.html">статьи/видео</a></li>
+				    </ul>
+				    <div class="soc_group">
+					    <a href="#"><img src="img/index/footer_vk.jpg" alt=""></a>
+					    <a href="#"><img src="img/index/footer_fb.jpg" alt=""></a>
+					    <a href="#"><img src="img/index/footer_inst.jpg" alt=""></a>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="row">
+		    <div class="footer_bottom clearfix">
+			    <div class="col-sm-6 col-md-3 no_padding">
+				    <div class="fb_padding">
+					    <a href="#">
+						    <div class="fb_block">
+							    <div class="fb_block_img">
+								    <img src="img/index/footer_ico_01.png" alt="">
+							    </div>
+							    <div class="fb_block_txt">
+								    <span>Записаться </span>
+								    на ремонт
+							    </div>
+						    </div>
+					    </a>
+				    </div>
+			    </div>
+			    <div class="col-sm-6 col-md-3 no_padding">
+				    <div class="fb_padding">
+					    <a href="#">
+						    <div class="fb_block">
+							    <div class="fb_block_img">
+								    <img src="img/index/footer_ico_02.png" alt="">
+							    </div>
+							    <div class="fb_block_txt">
+								    <span>Посмотреть наши </span>
+								    спецпредложения
+							    </div>
+						    </div>
+					    </a>
+				    </div>
+			    </div>
+			    <div class="col-sm-6 col-md-3 no_padding">
+				    <div class="fb_padding">
+					    <a href="servicesTo.html">
+						    <div class="fb_block">
+							    <div class="fb_block_img">
+								    <img src="img/index/footer_ico_03.png" alt="">
+							    </div>
+							    <div class="fb_block_txt">
+								    <span>Посчитать </span>
+								    стоимость то
+							    </div>
+						    </div>
+					    </a>
+				    </div>
+			    </div>
+			    <div class="col-sm-6 col-md-3 no_padding">
+				    <div class="fb_padding">
+					    <a href="tel:+74832338338">
+						    <div class="fb_block">
+							    <div class="fb_block_img">
+								    <img src="img/index/footer_ico_04.png" alt="">
+							    </div>
+							    <div class="fb_block_txt">
+								    <span>Связаться с нами </span>
+								    +7 (4832) 338-338
+							    </div>
+						    </div>
+					    </a>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <!--</div>-->
+    </footer>
+    <!--FOOTER END-->
+
+    <script src="js/jquery.min.js"></script><!-- Jquery Library -->
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap Library -->
+	<script src="js/jquery.maskedinput.min.js"></script><!-- Macked Input Library -->
+	<script src="js/slick.min.js"></script><!-- Macked Input Library -->
+	<script src="js/app.js"></script><!-- Custom Library -->
+</body>
+</html>

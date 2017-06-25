@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Senator</title>
+
+	<meta name="description" content="Title" /><!-- Description of the page -->
+	<meta name="author" content="Shpikovskaya Olesya"><!-- Author Name -->
+	<!--<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">-->
+	<link href="http://allfont.ru/allfont.css?fonts=raleway-regular" rel="stylesheet" type="text/css" />
+	<link href="http://allfont.ru/allfont.css?fonts=raleway-bold" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css"><!-- Bootstrap Style -->
+	<link rel="stylesheet" href="css/font-awesome.min.css"><!-- Custom Style -->
+	<link rel="stylesheet" href="css/slick.css"><!-- Slick Style -->
+	<link rel="stylesheet" href="css/slick-theme.css"><!-- Slick Style -->
+	<link rel="stylesheet" href="css/style.css"><!-- Custom Style -->
+</head>
+<body>
+<!--HEADER-->
+<header class="header">
+	<div class="header_top visible-sm visible-md visible-lg">
+		<ul class="">
+			<li class="active"><a href="about_company.html">О компании</a></li>
+			<li><a href="contacts.html">Контакты</a></li>
+			<li><a href="#">Отзывы</a></li>
+			<li><a href="articles_video.html">Статьи/видео</a></li>
+		</ul>
+	</div>
+	<div class="header_middle">
+		<div class="row">
+			<nav class="navbar">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="col-sm-3 col-md-2">
+						<a class="navbar-brand" href="#">
+							<img src="img/index/logo_header.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2 visible-md visible-lg">
+						<div class="h_text_1">
+							<p>Профессиональное</p>
+							<p>обслуживание и ремонт</p>
+							<p>автомобилей</p>
+						</div>
+					</div>
+
+					<div class="col-md-2 visible-md visible-lg">
+						<div class="h_text_1">
+							<p>+7 4832 338-338</p>
+							<p>+7 4832 78-33-82</p>
+							<a href="tel:+74832338338">Заказать звонок</a>
+						</div>
+					</div>
+					<div class="col-md-2 visible-md visible-lg">
+						<div class="h_text_1">
+							<p>ул. Объездная, 18</p>
+							<p>(Советский район)</p>
+							<a href="contacts.html">Показать схему проезда</a>
+						</div>
+					</div>
+
+					<div class="col-xs-6 no_padding col-sm-3 col-md-2 visible-xs visible-sm">
+						<div class="h_text_1_sm">
+							<a href="tel:+74832338338">
+								<img src="img/index/header_phone.png" alt="">
+								Позвонить нам
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 no_padding col-sm-3 col-md-2 visible-xs visible-sm">
+						<div class="h_text_1_sm">
+							<a href="#">
+								<img src="img/index/header_marker.png" alt="">
+								Схема проезда
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-2 visible-md visible-lg">
+						<div class="h_text_1">
+							<p>Работаем</p>
+							<p>с 9:00 до 18:00</p>
+							<p>без выходных</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-2 no_padding">
+						<div class="order_on_servis">
+							<button type="button" class="btn_order_1">
+								<img src="img/index/order_on_servis.png" alt="">запись на сервис</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="services.html">услуги</a></li>
+						<li><a href="marka_auto.html">запчасти</a></li>
+						<li><a href="actions.html">акции</a></li>
+						<li><a href="calculatorTo.html">калькулятор ТО</a></li>
+						<li class="visible-xs hidden-sm"><a href="#" class="menu_xs">О компании</a></li>
+						<li class="visible-xs hidden-sm"><a href="#" class="menu_xs">Контакты</a></li>
+						<li class="visible-xs hidden-sm"><a href="#" class="menu_xs">Отзывы</a></li>
+						<li class="visible-xs hidden-sm"><a href="#" class="menu_xs">Статьи/видео</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+	<div class="header_bottom">
+		<div class="row">
+			<div class="container-fluid">
+				<div class="col-md-12">
+					<h1>
+						профессиональный сервис вашего авто <span class="red_square"></span>
+					</h1>
+					<p>
+						диагностика, ремонт и обслуживание
+					</p>
+
+					<form action="" class="clearfix header_bottom_form">
+						<input type="text" placeholder="Ваше имя" class="header_bottom_name">
+						<input type="tel" id="phone_mask" placeholder="+7(___)___-__-__" class="header_bottom_tel">
+						<div class="group_btn">
+							<div class="gbtn_1">
+								<span class="i_want"><img src="img/index/order_red.png" alt=""></span>
+								Хочу записаться на сервис
+							</div>
+							<div class="gbtn_1">
+								<span class="i_want"><img src="img/index/order_red.png" alt=""></span>
+								Хочу купить запчасти
+							</div>
+						</div>
+						<button type="button" class="btn_call">заказать звонок</button>
+					</form>
+					<h2>
+						широкий выбор автозапчастей в наличии
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!--HEADER END-->
+
+    <!--MAIN BEGIN-->
+    <main>
+		<div class="row">
+			<div class="greeting_block ma_block">
+				<div class="col-md-2">
+					<div class="ma_block_img">
+						<img src="img/marka_auto/porsche-logo.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-10">
+				<div class="ma_block__text">
+					<p>
+						Автомобиль Porsche ещё в 80-е годы стал культовой машиной. Пожалуй, трудно найти человека, который бы отказался иметь в своём гараже такую красавицу. Москва и другие города России были покорены автомобилем буквально в считанные годы.
+					</p>
+					<p>
+						В нашем автосервисе Вашему автомобилю Порше будет предложен обширный список услуг: комплексная компьютерная диагностика, текущий или капитальный ремонт всех систем автомобиля, замена жидкостей, смена фильтров, замена изношенных деталей, фасадные и кузовные работы, замена и тонировка стекол, шиномонтажные работы.
+					</p>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class="ma_block_content">
+					<div class="mabc_price">
+						<h3>Цены на услуги автосервиса для автомобиля porsche</h3>
+						<div class="mp_block">
+						<p><span>Чтобы узнать цену на ремонт,</span>
+							выберите модель вашего автомобиля:</p>
+						<div class="ma_select_wrapper">
+							<div class="ma_vss_price">
+								<select class="ma_vsc_sel">
+									<option>Cayenne S Diesel</option>
+									<option value="1">Cayenne S Diesel 1</option>
+									<option value="2">Cayenne S Diesel 2</option>
+								</select>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="tabs">
+						<ul class="nav nav-tabs">
+							<li><a href="#tab_1"  data-toggle="tab">диагностика</a></li>
+							<li class="active"><a href="#tab_2" data-toggle="tab">ремонт</a></li>
+							<li><a href="#tab_3" data-toggle="tab">техобслуживание</a></li>
+
+						</ul>
+						<div class="tab-content">
+							<div id="tab_1" class="tab-pane">
+								<div class="tabs_block">
+
+								</div>
+
+							</div>
+							<div id="tab_2" class="tb_block tab-pane active">
+								<div class="ma_tabs_text_block">
+									<h2>Цены на ремонт для автомобиля porsche cayenne s diesel</h2>
+									<div class="text">
+										<p>
+											Какая бы услуга не понадобилась Вашему автомобилю, будь то ремонт механического повреждения, требующего косметического ремонта, диагностика, технический осмотр или капитальный ремонт двигателя, наши специалисты произведут работы на самом высоком уровне.
+										</p>
+										<p>
+											Именно автосервис Сенатор способен наилучшим образом обслужить такое авто, как Porsche Cayenne Diesel, ведь обеспечение всех цехов новейшим высокотехнологичным оборудованием позволяет обслуживать несколько клиентов одновременно. При этом ремонт занимает минимум времени, исключая очереди и утомительные ожидания, и отличается высочайшим качеством.
+										</p>
+									</div>
+									<div class="table-responsive">
+										<table class="table">
+											<tr class="active">
+												<td>Замена свечей зажигания</td>
+												<td>2400</td>
+											</tr>
+											<tr>
+												<td>Топливный насос - замена</td>
+												<td>2550</td>
+											</tr>
+											<tr class="active">
+												<td>Замена охлаждающей жидкости</td>
+												<td>900</td>
+											</tr>
+											<tr>
+												<td>Замена насоса охлаждающей жидкости</td>
+												<td>1650</td>
+											</tr>
+											<tr class="active">
+												<td>Труба передняя/приемная - замена</td>
+												<td>600</td>
+											</tr>
+											<tr>
+												<td>Замена глушителя</td>
+												<td>600</td>
+											</tr>
+											<tr class="active">
+												<td>Пыльник ШРУСа - внешний</td>
+												<td>3000</td>
+											</tr>
+											<tr>
+												<td>Пыльник ШРУСа - внутренний</td>
+												<td>3000</td>
+											</tr>
+											<tr class="active">
+												<td>Замена подшипника ступицы</td>
+												<td>2250</td>
+											</tr>
+											<tr>
+												<td>Опора амортизатора ( верхняя ) - замена</td>
+												<td>2550</td>
+											</tr>
+											<tr class="active">
+												<td>Замена пружины</td>
+												<td>2700</td>
+											</tr>
+											<tr>
+												<td>Замена амортизатора</td>
+												<td>2550</td>
+											</tr>
+											<tr class="active">
+												<td>Втулки стабилизатора (все) - замена</td>
+												<td>2700</td>
+											</tr>
+											<tr>
+												<td>Ступица/поворотный кулак в сборе - замена</td>
+												<td>2400</td>
+											</tr>
+											<tr class="active">
+												<td>Наконечник рулевой тяги - замена</td>
+												<td>1500</td>
+											</tr>
+											<tr>
+												<td>Суппорт переднего тормоза - замена</td>
+												<td>1650</td>
+											</tr>
+											<tr class="active">
+												<td>Задние тормозные колодки - замена</td>
+												<td>1350</td>
+											</tr>
+											<tr>
+												<td>Тормозные диски задние (оба) - замена</td>
+												<td>3300</td>
+											</tr>
+											<tr class="active">
+												<td>Замена генератора</td>
+												<td>900</td>
+											</tr>
+											<tr>
+												<td>Замена стартера</td>
+												<td>900</td>
+											</tr>
+											<tr class="active">
+												<td>Замена тормозной жидкости</td>
+												<td>1500</td>
+											</tr>
+										</table>
+									</div>
+
+								</div>
+								<div class="ma_tabs_text_block ma_top">
+									<h2>Специализированный сервис  porsche - гарантия качества</h2>
+									<div class="text_2">
+										<p>
+											<span>Какой-то контент. Например:</span>
+											Чтобы остаться довольным после ремонта авто, нужно обращаться в надежный автосервис. Но часто автовладельцы сталкиваются с низким обслуживанием и большими ценами. В «Сенаторе» все наоборот: стоимость услуг — демократичная, а качество на европейском уровне.
+										</p>
+										<p>
+											За огромный стаж работы, наша компания обрела широкий круг клиентов, штат опытных сотрудников, и и надежных поставщиков Porsche, поставляющих нам запчасти. Так что ремонт двигателя или тормозной системы будет сделан по высшему разряду.
+										</p>
+										<div class="uppercase inln">также у нас:</div>
+										<button class="btn_diagnostic">диагностика</button>
+										<button class="btn_to">техобслуживание</button>
+									</div>
+								</div>
+
+
+							</div>
+							<div id="tab_3" class="tb_block tab-pane">
+								<div class="table-responsive">
+
+								</div>
+							</div>
+						</div><!--end tab-content-->
+
+					</div><!--end TABS-->
+
+				</div><!--end .ma_block_content-->
+			</div>
+			<div class="col-md-4 no_padding">
+				<div class="ma_contacts clearfix">
+					<h2>вы можете связаться с нами по телефону:</h2>
+					<div class="ma_phone">
+						<a href="tel:+74832338338">+7 (4832) 338-338</a>
+						<p><span class="vert_line"></span>БЕЗ ВЫХОДНЫХ</p>
+						<p>с 9:00 до 18:00</p>
+					</div>
+					<h2>или записаться на сервис через онлайн-форму:</h2>
+					<div class="order_serves_block">
+						<div class="osb_header">
+							<h3>запись на сервис</h3>
+						</div>
+							<form action="" class="form_call">
+								<input type="text" placeholder="Ваше имя">
+								<input type="tel" placeholder="+7 (___) -___-__-__" id="phone_mask_2">
+								<div class="select_wrapper">
+									<div class="vss_price">
+										<select class="vsc_sel">
+											<option>Выберите услугу</option>
+											<option value="1">пункт 1</option>
+											<option value="2">пункт 2</option>
+										</select>
+									</div>
+								</div>
+								<input type="text" placeholder="дд.мм.гггг">
+								<input type="text" placeholder="--:--">
+							</form>
+							<button type="button" class="btn_call">отправить заявку</button>
+						</div>
+					<div class="ma_ps">
+						<span class="big_square"></span>
+						<p>
+						Мы всегда готовы проверить и при необходимости
+						провести ремонт Вашего porsche. нам можно доверять.
+					</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="ma_txt_block_3">
+				<h2>
+					<span class="big_square"></span>
+					важное о подразделении Porsche в автотехцентре сенатор
+				</h2>
+				<div class="ma_all_info clearfix">
+					<div class="col-sm-6 col-md-3">
+						<div class="ma_info">
+							<div class="ma_info_header">
+								<div class="ma_info_img">
+									<img src="img/marka_auto/ic_01.png" alt="">
+								</div>
+								<h3><span>Комфортная зона</span>
+								ожидания
+								</h3>
+							</div>
+							<span class="red_line"></span>
+							<div class="ma_info_txt">
+							В нашем автотехцентре ожидание не покажется
+							вам утомительным. Пока мы работаем, вы можете расслабиться, посмотреть TV, отдохнуть на удобном кожаном диване, размещённом в специальной комнате для клиентов. А если вы хотите присутствовать рядом со своим автомобилем и наблюдать за проведением работ, мы не будем возражать.
+						</div>
+					</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="ma_info">
+							<div class="ma_info_header">
+								<div class="ma_info_img">
+								<img src="img/marka_auto/ic_02.png" alt="">
+							</div>
+								<h3><span>широкий выбор </span>
+								автозапчастей</h3>
+							</div>
+							<span class="red_line"></span>
+							<div class="ma_info_txt">
+								Множество запчастей специально для Порше, которые в наличии на нашем складе. Благодаря чему – хотя и не только этому – мы делаем ремонт Порше вероятно, быстрее всех остальных конкурентов в Брянске.
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="ma_info">
+							<div class="ma_info_header">
+								<div class="ma_info_img">
+									<img src="img/marka_auto/ic_03.png" alt="">
+								</div>
+								<h3><span>оперативная </span>
+									работа</h3>
+							</div>
+							<span class="red_line"></span>
+							<div class="ma_info_txt">
+								Благодаря высокому профессионализму сотрудников ремонт и ТО вашего автомобиля займет минимальное время.
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="ma_info">
+							<div class="ma_info_header">
+								<div class="ma_info_img">
+									<img src="img/marka_auto/ic_04.png" alt="">
+								</div>
+								<h3><span>ОТветственное отношение и </span>
+									индивидуальный подход</h3>
+							</div>
+							<span class="red_line"></span>
+							<div class="ma_info_txt">
+								Вы сами выбираете услуги и запчасти из
+								предложенных. Вы сами называете подходящее время обслуживания. Наши сотрудники понимают важность дружелюбия и клиентоориентированного подхода и внимательны к каждому автомобилю. Клиенты благодарны в ответ: нас выбрали уже свыше двух тысяч владельцев Порше
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="row">
+			<div class="video_block ma_video">
+				<h2>
+					<span class="big_square"></span>
+					полезные видео и статьи для владельца автомобиля porsche
+				</h2>
+				<div class="vb_group">
+					<div class="video_div">
+						<iframe src="https://www.youtube.com/embed/9UlBsQLjjWI" frameborder="0" allowfullscreen></iframe>
+						<h5>ЗАголовок видео.</h5>
+					</div>
+					<div class="video_div">
+						<iframe src="https://www.youtube.com/embed/9UlBsQLjjWI" frameborder="0" allowfullscreen></iframe>
+						<h5>ЗАголовок видео,
+							состоящий из двух строк.</h5>
+					</div>
+					<div class="video_div">
+						<iframe src="https://www.youtube.com/embed/9UlBsQLjjWI" frameborder="0" allowfullscreen></iframe>
+						<h5>ЗАголовок видео.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+    </main>
+    <!--MAIN END-->
+    <!--FOOTER BEGIN-->
+    <footer class = "footer clearfix">
+	    <!--<div class="container-fluid">-->
+	    <div class="row">
+		    <div class="col-md-5">
+			    <div class="footer_content">
+				    <p>2017© АвтоТехЦентр СЕНАТОР</p>
+				    <p>осуществляет полное обслуживание и ремонт иномарок и отечественных автомобилей: шиномонтаж, ремонт двигателя и ходовой части, диагностику двигателя, экспресс-замену масла, вклейку стёкол, заправку кондиционеров, развал-схождение и другие виды работ.</p>
+			    </div>
+		    </div>
+
+		    <div class="col-sm-4 col-md-2">
+			    <div class="f_services_block">
+				    <p>услуги</p>
+				    <ul>
+					    <li><a href="#">Диагностика подвески</a></li>
+					    <li><a href="#">Автоэлектрика</a></li>
+					    <li><a href="#">Подвеска</a></li>
+					    <li><a href="#">Сход-развал</a></li>
+					    <li><a href="#">Ремонт ДВС</a></li>
+					    <li><a href="#">Замена масла/фильтров</a></li>
+					    <li><a href="#">Мойка</a></li>
+				    </ul>
+			    </div>
+		    </div>
+		    <div class="col-sm-4 col-md-2">
+			    <div class="f_spare_parts">
+				    <p>запчасти</p>
+				    <ul>
+					    <li><a href="#">Porsche</a></li>
+					    <li><a href="#">Toyota</a></li>
+					    <li><a href="#">Lexus</a></li>
+					    <li><a href="#">Renolt</a></li>
+					    <li><a href="#">Porsche</a></li>
+					    <li><a href="#">Toyota</a></li>
+					    <li><a href="#">Lexus</a></li>
+					    <li><a href="#">Renolt</a></li>
+					    <li><a href="#">Porsche</a></li>
+				    </ul>
+			    </div>
+		    </div>
+		    <div class="col-sm-4 col-md-3 no_padding">
+			    <div class="f_other_href">
+				    <ul>
+					    <li><a href="about_company.html">о компании</a></li>
+					    <li><a href="#">отзывы</a></li>
+					    <li><a href="articles_video.html">статьи/видео</a></li>
+				    </ul>
+				    <div class="soc_group">
+					    <a href="#"><img src="img/index/footer_vk.jpg" alt=""></a>
+					    <a href="#"><img src="img/index/footer_fb.jpg" alt=""></a>
+					    <a href="#"><img src="img/index/footer_inst.jpg" alt=""></a>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="row">
+		    <div class="footer_bottom clearfix">
+			    <div class="col-sm-6 col-md-3 no_padding">
+				    <div class="fb_padding">
+					    <a href="#">
+						    <div class="fb_block">
+							    <div class="fb_block_img">
+								    <img src="img/index/footer_ico_01.png" alt="">
+							    </div>
+							    <div class="fb_block_txt">
+								    <span>Записаться </span>
+								    на ремонт
+							    </div>
+						    </div>
+					    </a>
+				    </div>
+			    </div>
+			    <div class="col-sm-6 col-md-3 no_padding">
+				    <div class="fb_padding">
+					    <a href="#">
+						    <div class="fb_block">
+							    <div class="fb_block_img">
+								    <img src="img/index/footer_ico_02.png" alt="">
+							    </div>
+							    <div class="fb_block_txt">
+								    <span>Посмотреть наши </span>
+								    спецпредложения
+							    </div>
+						    </div>
+					    </a>
+				    </div>
+			    </div>
+			    <div class="col-sm-6 col-md-3 no_padding">
+				    <div class="fb_padding">
+					    <a href="servicesTo.html">
+						    <div class="fb_block">
+							    <div class="fb_block_img">
+								    <img src="img/index/footer_ico_03.png" alt="">
+							    </div>
+							    <div class="fb_block_txt">
+								    <span>Посчитать </span>
+								    стоимость то
+							    </div>
+						    </div>
+					    </a>
+				    </div>
+			    </div>
+			    <div class="col-sm-6 col-md-3 no_padding">
+				    <div class="fb_padding">
+					    <a href="tel:+74832338338">
+						    <div class="fb_block">
+							    <div class="fb_block_img">
+								    <img src="img/index/footer_ico_04.png" alt="">
+							    </div>
+							    <div class="fb_block_txt">
+								    <span>Связаться с нами </span>
+								    +7 (4832) 338-338
+							    </div>
+						    </div>
+					    </a>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <!--</div>-->
+    </footer>
+    <!--FOOTER END-->
+
+    <script src="js/jquery.min.js"></script><!-- Jquery Library -->
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap Library -->
+	<script src="js/jquery.maskedinput.min.js"></script><!-- Macked Input Library -->
+	<script src="js/slick.min.js"></script><!-- Macked Input Library -->
+	<script src="js/app.js"></script><!-- Custom Library -->
+</body>
+</html>
