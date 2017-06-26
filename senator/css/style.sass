@@ -1499,10 +1499,16 @@ div.profile-photo img
 			width: 57px
 			padding: 5px
 			background-color: #292f5e
-			color: #fff
 			text-align: center
-			+Raleway-b
-			font-weight: 700
+			a
+				color: #fff
+				text-align: center
+				+Raleway-b
+				font-weight: 700
+			&:hover
+				cursor: pointer
+				a
+					text-decoration: none
 		p.av_p__header
 			margin: -2px auto
 			+Raleway-b
@@ -1570,6 +1576,7 @@ div.profile-photo img
 		text-align: left
 		font-weight: 100
 	.btn_calculation
+		display: block
 		width: 100%
 		margin: 104px auto
 		position: relative
@@ -1584,9 +1591,11 @@ div.profile-photo img
 		text-transform: uppercase
 		transition: all .4s ease
 		&:hover
+			cursor: pointer
 			background-color: #fff
 			color: #000
 			transition: all .4s ease
+			text-decoration: none
 	p.hidden_block_xs
 		display: none
 //ACTIONS PAGE STYLES
