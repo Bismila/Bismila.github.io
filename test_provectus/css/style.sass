@@ -1,0 +1,456 @@
+
+//FONTS BEGIN
+=font-face($family, $path, $weight: normal, $style: normal)
+	@font-face
+		font-family: $family
+		src: url('#{$path}.eot')
+		src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype')
+		font-weight: $weight
+		font-style: $style
+
++font-face('opensansregular', '../fonts/OpenSans/opensansregular')
++font-face('OpenSansBold', '../fonts/OpenSans/OpenSansBold')
++font-face('OpenSansSemiBold', '../fonts/OpenSans/OpenSansSemiBold')
++font-face('OpenSansLight', '../fonts/OpenSans/OpenSansLight')
++font-face('ProximaNova-Semibold', '../fonts/ProximaNova-Semibold')
+
+=openSans-r
+	font-family: 'opensansregular', arial, sans-serif
+=openSans-b
+	font-family: 'OpenSansBold', Arial, sans-serif
+=openSans-sb
+	font-family: 'OpenSansSemiBold', Arial, sans-serif
+=openSans-l
+	font-family: 'OpenSansLight', Arial, sans-serif
+=proxima-nova-sb
+	font-family: 'ProximaNova-Semibold', Arial, sans-serif
+
+//FONTS END
+
+// cover
+=cover
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+
+
+// media
+// $width - ширина на адаптив
+// @content - класс элемента
+=r($width)
+	@media only screen and (max-width: $width + px)
+		@content
+$color_txt: #555559
+$color_menu: #2e2e2e
+$bg_btn: #286782
+
+
+//OTHER STYLES BEGIN
+.accordBlock
+.accordBlock-link
+	text-align: right
+	font-size: 16px
+	color: #00528b
+.accordBlock-link__arrow
+	&:before
+		content: "\f103"
+		font-family: FontAwesome
+		font-size: 16px
+		color: #00528b
+.accordBlock-link__js
+	.accordBlock-link__arrow
+		&:before
+			content: "\f102"
+			font-family: FontAwesome
+			font-size: 16px
+			color: #00528b
+
+.accordBlock-content
+	background-color: #f1f1f1
+	span
+		font-size: 18px
+		color: #000
+.accordBlock-content__input
+	border: 1px solid #e8e8e8
+	max-width: 100px
+	width: 100%
+.accordBlock-content__select
+	border: 1px solid #e8e8e8
+	max-width: 100px
+	width: 100%
+.accordBlock-content__inputName
+	max-width: 240px
+	width: 100%
+	border: 1px solid #e8e8e8
+.btnSearch-style
+	max-width: 120px
+	width: 100%
+	height: 42px
+	color: #ffffff
+	font-size: 18px
+	border: none
+	border-radius: 10px
+	background-color: #005d8b
+body
+	+openSans-r
+	font-size: 14px
+	font-weight: 400
+	overflow-x: hidden
+	color: $color_txt
+
+*
+	outline: none !important
+
+img
+	max-width: 100%
+
+a
+	transition: 0.4s
+	&:hover
+		text-decoration: none
+	span
+		color: #07ab66
+
+li
+	list-style-type: none
+h1
+	font-size: 50px
+	text-align: center
+	color: #f5f5f5
+.no_padding
+	padding-left: 0
+	padding-right: 0
+.no_margin
+	margin-left: 0
+	margin-right: 0
+.fl_left
+	float: left
+.fl_right
+	float: right
+// common style
+header
+	.shadow
+		position: absolute
+		top: 0px
+		left: 0px
+		right: 0px
+		bottom: 0px
+		z-index: 1
+		-webkit-box-shadow: inset 0 104px 120px -1px rgba(0,0,0,.28)
+		-moz-box-shadow: inset 0 104px 120px -1px rgba(0,0,0,.28)
+		box-shadow: inset 0 104px 120px -1px rgba(0,0,0,.28)
+	.header_top
+		text-align: center
+	.header_img
+		width: 250px
+		max-height: 250px
+	.header_img_container
+		width: 1440px
+		margin-top: -1px
+		//width: 100%
+		overflow: hidden
+		position: relative
+	.logo_instagramm
+		position: absolute
+		z-index: 2
+		right: 19px
+		top: 15px
+		img
+			margin-right: 5px
+		span
+			color: #fff
+			font-size: 15px
+			+proxima-nova-sb
+	.navbar-default
+		position: relative
+		background-color: #fff
+		border-color: #fff
+		margin-bottom: 0
+		z-index: 1
+	.navbar-collapse
+		-webkit-box-shadow: 0px 8px 19px -2px rgba(0,0,0,0.24)
+		-moz-box-shadow: 0px 8px 19px -2px rgba(0,0,0,0.24)
+		box-shadow: 0px 8px 19px -2px rgba(0,0,0,0.24)
+		padding-left: 0
+		padding-right: 0
+		//position: relative
+	.navbar-nav
+		float: none
+		text-align: center
+		height: 100px
+
+		li
+			float: none
+			display: inline-block
+			//height: 100px
+			width: 15%
+			a
+				padding: 40px 0px
+				+openSans-sb
+				font-size: 20px
+				color: $color_menu !important
+				text-transform: uppercase
+				letter-spacing: 2px
+				transition: all .4s ease
+
+
+	.header_bottom__bg
+		position: relative
+		width: 100%
+		//height: 100vh
+		height: 686px
+		background: #fbfafa
+		z-index: 0
+	.logo_hd
+		position: absolute
+		top: 114px
+		left: 50%
+		transform: translateX(-50%)
+	.header_bottom__btn
+		position: absolute
+		top: 70%
+		left: 50%
+		transform: translateX(-50%)
+		a
+			text-decoration: none
+			+openSans-sb
+			font-size: 20px
+			color: #fff
+			background-color: $bg_btn
+			padding: 20px 30px
+			letter-spacing: -0.5px
+			border-radius: 7px
+			&:hover
+				opacity: .8
+				transition: all .4s ease
+	h1
+		position: absolute
+		top: 34%
+		left: 38%
+		transform: translateX(-31%)
+		color: $color_txt
+		+openSans-l
+		font-size: 55.94px
+		line-height: 1.2
+		letter-spacing: -2px
+.section_txt
+	position: relative
+	width: 75%
+	margin: 30% auto
+	.section_header
+		display: inline-block
+		margin-bottom: 35px
+		margin-left: 15px
+		+openSans-b
+		font-size: 24px
+		color: $color_txt
+	.div_sect__header
+		display: inline
+		margin-left: 15px
+	.sect_img__retc
+		display: inline
+		margin-left: -55px
+	.section_more
+		+openSans-l
+		font-size: 18px
+		color: $color_txt
+footer
+	.footer_block
+		width: 100%
+		background-color: #efefef
+		padding: 40px 0 25px 0px
+	.footer_block__left
+		padding-left: 15px
+		width: 39%
+		display: inline-block
+		text-align: left
+	.footer_block__right
+		text-align: right
+		display: inline-block
+		width: 60%
+		ul
+			list-style-type: none
+			padding-left: 0
+			li
+				display: inline-block
+				border-right: 1px solid $color_txt
+				a
+					padding: 0px 15px
+					font-size: 14px
+					text-decoration: none
+					color: $color_txt
+					transition: all .4s ease
+					&:hover
+						opacity: .8
+						transition: all .4s ease
+				&:last-child
+					border-right: none
+
+@media (min-width: 1199px)
+	.container
+		max-width: 1440px
+		width: 100%
+		position: relative
+
+
+@media (max-width: 1439px)
+	.section_txt
+		margin: 27% auto
+	.no_margin
+		margin-left: -15px
+		margin-right: -15px
+
+@media (max-width: 1199px)
+	header
+		.header_top
+			text-align: center
+			max-width: 970px
+			margin: 0 auto
+			overflow: hidden
+			position: relative
+		.header_bottom__btn
+			top: auto
+			bottom: 20%
+
+	.section_txt
+		margin: 20% auto
+
+@media (max-width: 991px)
+	header
+		.container
+			max-width: 991px
+			width: 100%
+		.header_top
+			text-align: center
+			max-width: 991px
+			overflow: hidden
+			position: relative
+		.header_bottom__bg
+			text-align: center
+			padding-top: 12%
+			padding-bottom: 12%
+			height: auto
+		.logo_hd
+			position: relative
+			top: auto
+			left: auto
+			transform: translateX(0%)
+		h1
+			position: relative
+			width: 80%
+			margin: 5% auto
+			top: auto
+			left: auto
+			transform: translateX(0%)
+			margin-bottom: 10%
+			font-size: 44px
+		.header_bottom__btn
+			position: relative
+			top: auto
+			bottom: auto
+			top: auto
+			left: auto
+			transform: translateX(0%)
+		.navbar-nav
+			li
+				width: 24%
+				text-align: center
+
+	.section_txt
+		margin: 10% auto
+	footer
+		.container
+			max-width: 991px
+			width: 100%
+		.footer_block__txt
+			font-size: 12px
+		.footer_block__right
+			ul
+				li
+					a
+						font-size: 12px
+						padding: 0 10px
+@media (max-width: 767px)
+	header
+		.logo_instagramm
+			left: 10px
+			right: auto
+		.header_middle
+			position: absolute
+			top: 0
+			background: transparent
+			right: 14px
+			width: 97%
+		.navbar-default
+			background: transparent
+			border: none
+			.navbar-toggle
+				margin-right: 15px
+				.icon-bar
+					background-color: #fff
+			.navbar-collapse
+				background: rgba(0, 0, 0, .8)
+				border: none
+				overflow: hidden
+		.navbar-nav
+			height: auto
+			li
+				width: 100%
+				display: block
+				a
+					color: #fff !important
+					font-size: 16px
+					padding: 15px 0
+		.header_bottom__bg
+			padding-top: 5%
+			padding-bottom: 11%
+		h1
+			width: 90%
+			font-size: 30px
+		.header_bottom__btn
+			a
+				font-size: 14px
+				padding: 15px
+		.logo_hd
+			a
+				img
+					width: 10%
+	.section_content
+		text-align: center
+	.section_txt
+		width: 90%
+		margin: 5% auto
+		.section_header
+			margin-bottom: 0
+		.div_sect__header
+			font-size: 18px
+		.section_more
+			font-size: 16px
+	footer
+		.footer_block
+			padding-top: 20px
+			padding-bottom: 20px
+		.fl_right
+			float: none
+		.fl_left
+			float: none
+		.footer_block__left
+			display: block
+			text-align: center
+			width: 100%
+		.footer_block__right
+			width: 100%
+			display: block
+			text-align: center
+			ul
+				li
+					display: block
+					border-right: none
+
+@media (max-width: 600px)
+	.disp_none
+		display: none
+	.row
+		margin-right: 0
+	.container
+		padding-right: 0
