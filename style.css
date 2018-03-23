@@ -91,3 +91,14 @@ h1 {
   background-color: #ee9d08;
   cursor: pointer;
 }
+
+.pink {
+  border: 1px solid #a30ca894;
+  background-color: #a30ca894;
+}
+
+.pink:hover {
+  border: 1px solid #ee08cf;
+  background-color: #ee08cf;
+  cursor: pointer;
+}
