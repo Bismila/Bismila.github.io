@@ -19,21 +19,13 @@ h1 {
   max-height: 200px;
   height: 200px;
   border-radius: 3px;
+  background-color: #ccc;
+  color: #ccc;
+  border: 1px solid #ccc;
   transition: all .4s ease;
   -webkit-box-shadow: 5px 5px 31px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 5px 5px 31px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 5px 5px 31px 0px rgba(0, 0, 0, 0.15);
-}
-
-.item a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: cursive;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .item:hover {
@@ -43,10 +35,24 @@ h1 {
   box-shadow: 5px 5px 59px 0px rgba(0, 0, 0, 0.23);
 }
 
+.item a {
+  font-weight: bold;
+}
+
+.item a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .blue {
   border: 1px solid #0000ff;
   background-color: #0000ff;
-  color: #fff;
   transition: all .4s ease;
 }
 
@@ -57,9 +63,14 @@ h1 {
   cursor: pointer;
 }
 
+.blue a {
+  color: #fff;
+}
+
 .green {
   border: 1px solid #00e600;
   background-color: #00e600;
+  color: #000000;
 }
 
 .green:hover {
@@ -67,6 +78,10 @@ h1 {
   background-color: #39c939;
   color: #000000;
   cursor: pointer;
+}
+
+.green a {
+  color: #000000;
 }
 
 .darkblue {
@@ -81,15 +96,24 @@ h1 {
   cursor: pointer;
 }
 
+.darkblue a {
+  color: #fcfcfc;
+}
+
 .orange {
   border: 1px solid #ff9900;
   background-color: #ff9900;
+  color: #000000;
 }
 
 .orange:hover {
   border: 1px solid #ee9d08;
   background-color: #ee9d08;
   cursor: pointer;
+}
+
+.orange a {
+  color: #000;
 }
 
 .pink {
@@ -103,6 +127,10 @@ h1 {
   cursor: pointer;
 }
 
+.pink a {
+  color: #000;
+}
+
 .red {
   border: 1px solid #eb3b06fa;
   background-color: #eb3b06fa;
@@ -114,13 +142,22 @@ h1 {
   cursor: pointer;
 }
 
+.red a {
+  color: #fcfcfc;
+}
+
 .yellow {
   border: 1px solid #fcf700ea;
   background-color: #fcf700ea;
+  color: #000000;
 }
 
 .yellow:hover {
   border: 1px solid #cbee08;
   background-color: #cbee08;
   cursor: pointer;
+}
+
+.yellow a {
+  color: #000;
 }
