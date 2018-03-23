@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Апельсин  &mdash; Расписание</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+ 	<!-- Add the new slick-theme.css if you want the default styling -->
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/style_for_media.css">
+
+</head>
+<body>
+
+
+<!--Modal window for the "Order Up" button c using bootstrap 3-->
+<div class="modal fade" id="modal-1" tabindex="-1" role="dialog"  aria-hidden="true" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg modal_container">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--X button to close the window in the upper right corner-->
+                <button class="close" type="button" data-dismiss="modal">&times;</button>
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="modal-title">Итальянское вдохновение</h4>
+						<p>12 января / Четверг 19:00</p>
+					</div>
+				</div>
+            </div>
+            <div class="modal-body">
+            	<div class="row">
+					<div class="col-md-12">
+						<img src="img/popup_window/1.jpg" alt="pizza" class="MW_img">
+						<span>В мастер-класс включено:</span>
+						<ul class="MW_list">
+							<li>Легкие закуски</li>
+							<li>Прохладительные напитки</li>
+							<li>Приготовление меню</li>
+							<li>Конкурсы и викторины</li>
+							<li>Продукты и инвентарь для приготовления</li>
+							<li>Услуги фотографа и электронный фотоальбом</li>
+							<li>Электронные рецепты всех приготовленных блюд</li>
+							<li>Отличное настроение и незабываемые впечатления</li>
+							<li>Памятный диплом</li>
+						</ul>
+						<form action="#" class="form_popup">
+							<input class="form_popup_input" type="text" placeholder="Имя">
+							<input id="form_popup_tel_mask" class="form_popup_input" type="text" placeholder="+7(___)___-__-__">
+							<button class="btn btn-default" type="button" data-dismiss="modal">Записаться</button>
+						</form>
+					</div>
+				</div>
+                <div class="row">
+					<div class="col-md-12">
+						<div class="MW_all_content">
+							<p class="MW_content1">Каждый кулинарный мастер-класс итальянской кухни — это настоящее путешествие по Италии, в котором можно узнать интересные особенности и традиции приготовления блюд этой страны. Так уж сложилось, что самым распространенным итальянским блюдом является паста. При первом упоминании об итальянской кухне сразу представляются аппетитные спагетти с тонкими ломтиками бекона, залитые соусом из яиц и сыра. 
+							</p>
+							<p class="MW_content2">Традиционно пасту готовят в каждом доме Италии по старинным рецептам прабабушек при четком соблюдении рецептуры. Существуют сотни вариантов приготовления этого блюда, но чтобы оценить настоящий вкус, приглашаем вас на мастер-класс в нашу студию. Лучшие шеф-повара поделятся секретами приготовления итальянской пасты и дадут мастер-класс по приготовлению пиццы. Здесь вы почувствуете колорит Италии и узнаете истинный вкус итальянских блюд.
+							</p>
+						</div>
+					</div>
+				</div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<header class="page_schedule">
+	<!--SOCIAL_ICONS-->
+	<div class="header_social_i">
+		<div class="container header_social_i_md">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-9">
+					<ul>
+						<li class="header_social_i_group">
+							<a href="/" target="_blank">
+								<i class="fa fa-vk" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="header_social_i_group">
+							<a href="/" target="_blank">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="header_social_i_group">
+							<a href="/" target="_blank">
+								<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="header_social_i_group">
+							<a href="/" target="_blank">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="header_social_i_group">
+							<a href="/" target="_blank">
+								<i class="fa fa-google-plus" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--HEADER_MENU-->
+	<div class="header_menu_schedule">
+		<div class="header_menu_bg">
+			<a class="navbar-brand" href="index.html">
+						<img src="img/main_page_img/header_img/logo.png" alt="Apelcin cooking">
+					</a>
+			<nav id="menu" class="navbar navbar-default">
+
+				<div class="container header_menu_md">
+		<!-- Mobile display menu -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-left">
+							<li class="phone">
+								<a href="tel:+78007809090">
+									<img src="img/main_page_img/header_img/tel.png" alt="tel">
+									+7 (800) 780 90 90
+								</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li class="active header_menu_link">
+								<a href="/">О нас</a>
+							</li>
+							<li class="header_menu_link">
+								<a href="schedule.html">Расписание</a>
+							</li>
+							<li class="header_menu_link">
+								<a href="corporate.html">Корпоративы и праздники</a>
+							</li>
+							<li class="header_menu_link">
+								<a href="/">Аренда</a>
+							</li>
+							<li class="header_menu_link">
+								<a href="#contacts">Контакты</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+	</div>
+</header>
+<!--block "Расписание кулинарной школы Апельсин"-->
+<section class="page_schedule_section_1">
+	<div class="container PS_section_1_md">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<h1 class="PS_section_1_h1">Расписание кулинарной школы Апельсин</h1>
+						<div class="PS_section_1_img_1">
+							<img src="img/main_page_img/section_1/simbol.png" alt="symbol">
+						</div>
+					</div>
+				</div>
+
+				<!--Dropdown Menu - kitchen -->
+				<div class="row PS_section_1_select_md">
+					<div class="PS_section_1_kitchen">
+						<div class="form-group col-md-3 col-md-offset-2">
+							<select name="kitchen" class="form-control form-sel selectpicker" id="kitchen_list" >
+								    <option disabled selected class="hidden">Кухня</option>
+								    <option value="Итальянская">Итальянская (10)</option>
+								    <option value="Грузинская">Грузинская (6)</option>
+								    <option value="Испанская">Испанская (3)</option>
+								    <option value="Русская">Русская (20)</option>
+								    <option value="Паназиатская">Паназиатская (5)</option>
+								    <option value="Французская">Французская (6)</option>
+								    <option value="Десерты">Десерты (12)</option>
+								    <option value="Торты">Торты (8)</option>
+								    <option value="Мясо/Стейки">Мясо/Стейки (2)</option>
+							</select>
+						</div>
+					</div>
+				<!--Dropdown Menu - price -->
+					<div class="PS_section_1_price">
+						<div class="form-group col-md-3 col_price">
+							<select name="price" class="form-control form-sel selectpicker" id="price_list">
+								    <option disabled selected class="hidden">Цена</option>
+								    <option value="2000">2000 руб.</option>
+								    <option value="4000">4000 руб.</option>
+								    <option value="6000">6000 руб.</option>
+								    <option value="7000">7000 руб.</option>
+								    <option value="8000">8000 руб.</option>
+								    <option value="10 000">10 000 руб.</option>
+							</select>
+						</div>
+					</div>
+				<!--Dropdown Menu - months -->
+					<div class="PS_section_1_month">
+						<div class="form-group col-md-3 col_month">
+							<select name="months" class="form-control form-sel selectpicker" id="months_list">
+								    <option disabled selected class="hidden">Месяц</option>
+								    <option value="Декабрь">Декабрь (10)</option>
+								    <option value="Январь">Январь (23)</option>
+								    <option value="Февраль">Февраль (45)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="PS_section_1_choiсe"><span>Вы выбрали:</span>
+				<input name="" data-role = "show" type="text" id="inp_kitchen" readonly><span class="del_select1">&times;</span>
+				<input name="" type="text" id="inp_price" readonly><span class="del_select2">&times;</span>
+				<input name="" type="text" id="inp_months" readonly><span class="del_select3">&times;</span>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- </div> -->
+</section>
+
+<!--block "images"-->
+<section class="page_schedule_section_2">
+	<div class="container PS_section_2_md">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="PS_img_group">
+					<img src="img/schedule/1.jpg" alt="img" class="PS_section_2_img">
+					<div class="PS_content">
+						<h3 class="PS_h3">Новогодний ужин</h3>
+						<div class="PS_text_date">9 декабря /Пятница/ 19.00</div>
+							<div class="PS_content_date_hover">
+								<p>Салат с пармской ветчиной</p>
+								<p>Буратта и мандарин</p>
+								<p>Телятина с кремом из сельдерея и грибным соусом</p>
+								<p>Английский рождественский кекс</p>
+							</div>
+						<button type="button" role="button" class="btn" data-toggle="modal" data-target="#modal-1">Записаться</button>
+						<div class="PS_text_price"> 3000 руб.</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="PS_img_group">
+					<img src="img/schedule/2.jpg" alt="img" class="PS_section_2_img">
+					<div class="PS_content">
+						<h3 class="PS_h3">Для детей: Имбирные пряники</h3>
+						<div class="PS_text_date">15 декабря /Четверг/ 18.00</div>
+						<div class="PS_content_date_hover">
+								<p>Салат с пармской ветчиной</p>
+								<p>Буратта и мандарин</p>
+								<p>Телятина с кремом из сельдерея и грибным соусом</p>
+								<p>Английский рождественский кекс</p>
+							</div>
+						<button>Записаться</button>
+						<div class="PS_text_price"> 3000 руб.</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="PS_img_group">
+					<img src="img/schedule/3.jpg" alt="img" class="PS_section_2_img">
+					<div class="PS_content">
+						<h3 class="PS_h3">Итальянское вдохновение</h3>
+						<div class="PS_text_date">24 декабря /Суббота/ 19.00</div>
+						<div class="PS_content_date_hover">
+								<p>Салат с пармской ветчиной</p>
+								<p>Буратта и мандарин</p>
+								<p>Телятина с кремом из сельдерея и грибным соусом</p>
+								<p>Английский рождественский кекс</p>
+							</div>
+						<button>Записаться</button>
+						<div class="PS_text_price"> 4500 руб.</div>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+
+		<!-- <div class="row"> -->
+			<div class="col-md-4">
+				<div class="PS_img_group">
+					<img src="img/schedule/4.jpg" alt="img" class="PS_section_2_img">
+					<div class="PS_content">
+						<h3 class="PS_h3">Мясо-стейки</h3>
+						<div class="PS_text_date">4 января /Пятница/ 19.00</div>
+						<div class="PS_content_date_hover">
+								<p>Салат с пармской ветчиной</p>
+								<p>Буратта и мандарин</p>
+								<p>Телятина с кремом из сельдерея и грибным соусом</p>
+								<p>Английский рождественский кекс</p>
+							</div>
+						<button>Записаться</button>
+						<div class="PS_text_price"> 3000 руб.</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="PS_img_group">
+					<img src="img/schedule/5.jpg" alt="img" class="PS_section_2_img">
+					<div class="PS_content">
+						<h3 class="PS_h3">Для детей: Десерты</h3>
+						<div class="PS_text_date">15 января /Четверг/ 18.00</div>
+						<div class="PS_content_date_hover">
+								<p>Салат с пармской ветчиной</p>
+								<p>Буратта и мандарин</p>
+								<p>Телятина с кремом из сельдерея и грибным соусом</p>
+								<p>Английский рождественский кекс</p>
+							</div>
+						<button>Записаться</button>
+						<div class="PS_text_price"> 3000 руб.</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="PS_img_group">
+					<img src="img/schedule/6.jpg" alt="img" class="PS_section_2_img">
+					<div class="PS_content">
+						<h3 class="PS_h3">Азиатская кухня</h3>
+						<div class="PS_text_date">24 января /Суббота/ 19.00</div>
+						<div class="PS_content_date_hover">
+								<p>Салат с пармской ветчиной</p>
+								<p>Буратта и мандарин</p>
+								<p>Телятина с кремом из сельдерея и грибным соусом</p>
+								<p>Английский рождественский кекс</p>
+							</div>
+						<button>Записаться</button>
+						<div class="PS_text_price"> 4500 руб.</div>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+
+		<!-- <div class="row"> -->
+			<div class="col-md-4">
+				<div class="PS_img_group">
+					<img src="img/schedule/7.jpg" alt="img" class="PS_section_2_img">
+					<div class="PS_content">
+						<h3 class="PS_h3">Вкуснейшие гамбургеры</h3>
+						<div class="PS_text_date">9 декабря /Пятница/ 19.00</div>
+						<div class="PS_content_date_hover">
+								<p>Салат с пармской ветчиной</p>
+								<p>Буратта и мандарин</p>
+								<p>Телятина с кремом из сельдерея и грибным соусом</p>
+								<p>Английский рождественский кекс</p>
+							</div>
+						<button>Записаться</button>
+						<div class="PS_text_price"> 3000 руб.</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="PS_img_group">
+					<img src="img/schedule/8.jpg" alt="img" class="PS_section_2_img">
+					<div class="PS_content">
+						<h3 class="PS_h3">Для детей: Кексы</h3>
+						<div class="PS_text_date">15 декабря /Четверг/ 18.00</div>
+						<div class="PS_content_date_hover">
+								<p>Салат с пармской ветчиной</p>
+								<p>Буратта и мандарин</p>
+								<p>Телятина с кремом из сельдерея и грибным соусом</p>
+								<p>Английский рождественский кекс</p>
+							</div>
+						<button>Записаться</button>
+						<div class="PS_text_price"> 3000 руб.</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="PS_img_group">
+					<img src="img/schedule/9.jpg" alt="img" class="PS_section_2_img">
+					<div class="PS_content">
+						<h3 class="PS_h3">Итальянская феерия</h3>
+						<div class="PS_text_date">24 декабря /Суббота/ 19.00</div>
+						<div class="PS_content_date_hover">
+								<p>Салат с пармской ветчиной</p>
+								<p>Буратта и мандарин</p>
+								<p>Телятина с кремом из сельдерея и грибным соусом</p>
+								<p>Английский рождественский кекс</p>
+							</div>
+						<button>Записаться</button>
+						<div class="PS_text_price"> 4500 руб.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row btn">
+			<div class="col-md-12">
+				<a href="/" class="PS_load">
+					<img src="img/schedule/button.png" alt="load">
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--block "Напишите нам"-->
+<section class="section_5">
+	<div class="container">
+		<div class="row">
+			<div class="section_5_md">
+				<div class="col-md-5 col-sm-4">
+					<a href="index.html">
+						<img src="img/main_page_img/section_5/logo_section_5.png" alt="logo">
+					</a>
+				</div>
+				<div class="col-md-5 col-sm-5 col-md-offset-1 form_sm">
+				<h3>Напишите нам:</h3>
+					<a href="" id="contacts"></a>
+					<form>
+						<input type="text" placeholder="Имя"><br>
+						<input type="tel" id="phone_mask" placeholder="+7(800)780-90-90"><br>
+						<input type="text" placeholder="E-mail"><br>
+						<textarea name="message" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea><br>
+						<button type="button" name="bnt_Send_form">Отправить</button><br>
+					</form>
+				</div>
+			</div>
+		<!-- </div> -->
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="footer-md">
+				<div class="col-md-4 col-sm-4">
+					<div class="footer_div_1">
+						Кулинарная студия “Апельсин” 2016
+					</div>
+					<div class="footer_tel">
+						<a href="tel:+78007809090">+7 (800) 780 90 90</a>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-3 col-md-offset-4 cl-sm-offset-2 footer_div_2">
+					создание и продвижение
+				</div>
+				<div class="col-md-2 col-sm-3 footer_div_3">
+					<a href="" target="_blank">
+						<img src="img/main_page_img/footer/logo_footer.png" alt="logo">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script defer src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script defer src="js/bootstrap.min.js" type="text/javascript"></script>
+<script defer src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script defer src="slick/slick.js" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+<script defer src="js/js.js" type="text/javascript"></script>
+
+</body>
+</html>
